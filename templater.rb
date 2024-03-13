@@ -5,20 +5,20 @@
 class Templater < Formula
   desc "A templating tool using helm flavoured sprig"
   homepage "https://github.com/rjshrjndrn/templater"
-  version "4.0.1"
+  version "4.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.1/templater_4.0.1_darwin_amd64.tar.gz"
-      sha256 "06f59036c0435fdc3e391190173bc91aa330c7f33f43a1c883a6ce8da8fa8150"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.2/templater_4.0.2_darwin_amd64.tar.gz"
+      sha256 "2ddd0164e6b31faa375b3382033c1e5ca6d06c9b53e522bdd60e7ff5f05031f1"
 
       def install
         bin.install "templater"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.1/templater_4.0.1_darwin_arm64.tar.gz"
-      sha256 "f3d39158e21c5b698347c97e7b7fec8de7a26c077404ed9a85c4d6690e193c6e"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.2/templater_4.0.2_darwin_arm64.tar.gz"
+      sha256 "c137b4a2f8a09fa87cc46789680dfd6fac50d18a9db0f0af1e75c6e8b4a84942"
 
       def install
         bin.install "templater"
@@ -28,16 +28,16 @@ class Templater < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.1/templater_4.0.1_linux_arm64.tar.gz"
-      sha256 "2be52d8f7dd09ef6f6fa76259160a18dc3b365fe1c9e125935a0d3c59022053d"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.2/templater_4.0.2_linux_arm64.tar.gz"
+      sha256 "c3e2cdccb4ad7ece8094eb029eba8dd46d13e7a7d826b18a6cb7c8f099a30114"
 
       def install
         bin.install "templater"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.1/templater_4.0.1_linux_amd64.tar.gz"
-      sha256 "a1e557e26e0d07a4ac9331ba28671bceec840e848e2f00c939ca73b82c1d3cc5"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v4.0.2/templater_4.0.2_linux_amd64.tar.gz"
+      sha256 "ecd173ba821bdecdc9424bc0135e774928b1d224f0fe95c68acfb2f794bdd80b"
 
       def install
         bin.install "templater"
