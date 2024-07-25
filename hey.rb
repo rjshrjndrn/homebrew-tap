@@ -10,7 +10,7 @@ class Hey < Formula
   on_macos do
     on_intel do
       url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_darwin_amd64.tar.gz"
-      sha256 "36c3fff3640270b947a19f401726c8f2cab79644aaaf53dafd38d891ca3bb6cb"
+      sha256 "fc2d7e5ccbede070752945d624a79003235b27ea81c2b18011aa5a7f1a5ce416"
 
       def install
         bin.install "hey"
@@ -18,7 +18,7 @@ class Hey < Formula
     end
     on_arm do
       url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_darwin_arm64.tar.gz"
-      sha256 "e1dc2fe79a1c643e0368877be2ee4ac02a2900e686c26082803222859056929c"
+      sha256 "704a5613e07e5088a9d1107acd5e17a4b42a371fd5efbe184bd47688f62aa82d"
 
       def install
         bin.install "hey"
@@ -30,7 +30,7 @@ class Hey < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_linux_amd64.tar.gz"
-        sha256 "f16ba4f36e9971b9ad9f6eb58fe3f83f9b2ca4ed83535c3e57ac450eee53f3b2"
+        sha256 "33c4fa41513f4c457363a68613a7b2b5b9cf98213f8a8296811f47745590ebd1"
 
         def install
           bin.install "hey"
@@ -40,7 +40,7 @@ class Hey < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_linux_arm64.tar.gz"
-        sha256 "8b6c5f064ffd2a323e44c9cd581c39b1c6301e15796ed939689c4c242238a684"
+        sha256 "723c7383213c69ea758417e2c6473acf08b52f4886bf930244424f718a871b67"
 
         def install
           bin.install "hey"
