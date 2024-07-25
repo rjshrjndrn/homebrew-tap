@@ -5,20 +5,20 @@
 class Hey < Formula
   desc "A templating tool using helm flavoured sprig"
   homepage "https://github.com/rjshrjndrn/hey"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.5/hey_0.1.5_darwin_amd64.tar.gz"
-      sha256 "30fb39ab1f9855a7789cacde33631902a313728b4dae64efe1be6267dc466447"
+      url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_darwin_amd64.tar.gz"
+      sha256 "36c3fff3640270b947a19f401726c8f2cab79644aaaf53dafd38d891ca3bb6cb"
 
       def install
         bin.install "hey"
       end
     end
     on_arm do
-      url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.5/hey_0.1.5_darwin_arm64.tar.gz"
-      sha256 "81eb28c966730d259588738552dc51fa6cbcde92fb20a8ee1a3d18e44a131f10"
+      url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_darwin_arm64.tar.gz"
+      sha256 "e1dc2fe79a1c643e0368877be2ee4ac02a2900e686c26082803222859056929c"
 
       def install
         bin.install "hey"
@@ -29,8 +29,8 @@ class Hey < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.5/hey_0.1.5_linux_amd64.tar.gz"
-        sha256 "d50af86e9117495d7817db31664e0f168dd879778aa4984c944a8ce631b055cd"
+        url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_linux_amd64.tar.gz"
+        sha256 "f16ba4f36e9971b9ad9f6eb58fe3f83f9b2ca4ed83535c3e57ac450eee53f3b2"
 
         def install
           bin.install "hey"
@@ -39,8 +39,8 @@ class Hey < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.5/hey_0.1.5_linux_arm64.tar.gz"
-        sha256 "63e582c412140d797c08fe75f9c0527a7f4428c33f710ce6be84cf41d849f4eb"
+        url "https://github.com/rjshrjndrn/hey/releases/download/v0.1.6/hey_0.1.6_linux_arm64.tar.gz"
+        sha256 "8b6c5f064ffd2a323e44c9cd581c39b1c6301e15796ed939689c4c242238a684"
 
         def install
           bin.install "hey"
