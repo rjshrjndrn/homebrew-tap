@@ -5,20 +5,20 @@
 class Templater < Formula
   desc "A templating tool using helm flavoured sprig"
   homepage "https://github.com/rjshrjndrn/templater"
-  version "6.0.1"
+  version "6.1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/rjshrjndrn/templater/releases/download/v6.0.1/templater_6.0.1_darwin_amd64.tar.gz"
-      sha256 "eb63a46e5cd516862b5ba6070c6f1be85fd7352c51541077bf24efd74a1bab6c"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v6.1.0/templater_6.1.0_darwin_amd64.tar.gz"
+      sha256 "597c218ec494bb0000390ad0380b5d9c663466d3d1ea466e28dd20c476cd491b"
 
       def install
         bin.install "templater"
       end
     end
     on_arm do
-      url "https://github.com/rjshrjndrn/templater/releases/download/v6.0.1/templater_6.0.1_darwin_arm64.tar.gz"
-      sha256 "93cb9ee417f8b2db2b265b22e690021cd2b50db79faac4266c581532b30da75e"
+      url "https://github.com/rjshrjndrn/templater/releases/download/v6.1.0/templater_6.1.0_darwin_arm64.tar.gz"
+      sha256 "8fad50765b2ed8b0040bd66aacd67f5461f06ed756491ed274d260634daac62e"
 
       def install
         bin.install "templater"
@@ -29,8 +29,8 @@ class Templater < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rjshrjndrn/templater/releases/download/v6.0.1/templater_6.0.1_linux_amd64.tar.gz"
-        sha256 "0849ade05bc2b6c76a91f3eb113f1487da7859b03628c1ba1db4ebd9befe9215"
+        url "https://github.com/rjshrjndrn/templater/releases/download/v6.1.0/templater_6.1.0_linux_amd64.tar.gz"
+        sha256 "10c94c2fb615a94a9f4b62575441bcd34ff987279e051b8e72f0141ea8e134b2"
 
         def install
           bin.install "templater"
@@ -39,8 +39,8 @@ class Templater < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rjshrjndrn/templater/releases/download/v6.0.1/templater_6.0.1_linux_arm64.tar.gz"
-        sha256 "a076e7af7b96530bfe9fcb95528bcf0e399aaf4a62e92068c63862b06360e168"
+        url "https://github.com/rjshrjndrn/templater/releases/download/v6.1.0/templater_6.1.0_linux_arm64.tar.gz"
+        sha256 "ef7a1b0e09b51a7371a2d90536ee8b2e7451963b80511d1775d21735751e6009"
 
         def install
           bin.install "templater"
